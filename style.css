@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: url("./assets/drummer.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+body::after {
+  background: red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.container {
+  /*
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 8rem;
+  padding: 1.5rem .5rem;
+  margin: .5rem;
+  text-shadow: 0 0 5px #000;
+  border: #000 solid 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+.container .playing {
+  border: #e2b51f solid 2px;
+  -webkit-box-shadow: 0 0 15px 1px #e2b51f;
+          box-shadow: 0 0 15px 1px #e2b51f;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container kbd {
+  color: white;
+}
+
+.container span {
+  color: yellow;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=style.css.map */
