@@ -28,3 +28,9 @@ window.addEventListener("keydown", (e) => {
 
   // console.log(audio);
 });
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./pwa.js");
+}
+
+window.addEventListener("")
